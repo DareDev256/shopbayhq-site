@@ -1,10 +1,17 @@
+import Image from "next/image";
+
 export default function Problem() {
     return (
         <section className="bg-zinc-950 py-24">
             <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2">
-                <div className="flex aspect-[4/3] items-center justify-center rounded-none border border-zinc-800 bg-zinc-900/50 text-zinc-600">
-                    {/* Placeholder — replace with whiteboard chaos photo */}
-                    <span className="text-sm uppercase tracking-widest">[ Shop whiteboard photo ]</span>
+                <div className="relative aspect-[4/3] overflow-hidden border border-zinc-800 bg-zinc-900/50">
+                    <Image
+                        src="https://images.unsplash.com/photo-1632823471565-1ecdf0ecb9b4?w=1200&q=80&auto=format&fit=crop"
+                        alt="Cluttered shop workspace with tools and paper"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover grayscale"
+                    />
                 </div>
                 <div className="flex flex-col justify-center">
                     <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-red-500">

@@ -1,20 +1,34 @@
+import Image from "next/image";
 import { BRAND } from "@/lib/brand";
+
+// Placeholder hero — swap `heroVideoSrc` when Seedance footage is ready.
+// For now, a cinematic auto-service-bay still from Unsplash.
+const heroImageSrc =
+    "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=2400&q=80&auto=format&fit=crop";
+const heroVideoSrc: string | null = null;
 
 export default function Hero() {
     return (
         <section className="relative isolate min-h-[90vh] overflow-hidden">
-            {/* Video slot — swap src for Seedance shop footage when ready */}
-            <video
-                className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/hero-poster.jpg"
-            >
-                {/* <source src="/hero-shop.mp4" type="video/mp4" /> */}
-            </video>
-            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black" />
+            {heroVideoSrc ? (
+                <video
+                    className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
+                    autoPlay muted loop playsInline
+                    poster={heroImageSrc}
+                >
+                    <source src={heroVideoSrc} type="video/mp4" />
+                </video>
+            ) : (
+                <Image
+                    src={heroImageSrc}
+                    alt="Service bay with vehicles"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="-z-10 object-cover opacity-50"
+                />
+            )}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/80 via-black/70 to-black" />
 
             <div className="mx-auto flex max-w-6xl flex-col justify-center px-6 pt-40 pb-24 sm:pt-48">
                 <p className="mb-4 text-xs font-medium uppercase tracking-[0.3em] text-red-500">

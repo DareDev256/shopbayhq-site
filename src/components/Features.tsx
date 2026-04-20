@@ -27,7 +27,7 @@ const FEATURES = [
 
 export default function Features() {
     return (
-        <section className="relative bg-black py-24">
+        <section id="demo" className="relative bg-black py-24 scroll-mt-16">
             <div className="mx-auto max-w-6xl px-6">
                 <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-red-500">
                     What you get
