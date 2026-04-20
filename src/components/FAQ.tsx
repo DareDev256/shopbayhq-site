@@ -1,0 +1,63 @@
+const QUESTIONS = [
+    {
+        q: "Will my staff actually use it?",
+        a: "If they use a group chat, they can use this. The Kanban is one screen. Clock in is one button. Built for shops, not software engineers.",
+    },
+    {
+        q: "What if I cancel?",
+        a: "You keep your data. Export to CSV any time. No lock-in, no exit fees. We'd rather you stay because we earned it.",
+    },
+    {
+        q: "Does it work on the iPad mounted on my wall?",
+        a: "Yes. Installable as a PWA, landscape-optimized, shared-device mode with PIN quick-switch between staff.",
+    },
+    {
+        q: "Is my customer data safe?",
+        a: "Each workspace is fully isolated. Photos are stored encrypted. We never train anything on your data. Session cookies are HTTPS-only and rotated.",
+    },
+    {
+        q: "What if the internet goes down?",
+        a: "The PWA caches the shell; recent state stays visible. When connectivity returns, changes sync automatically.",
+    },
+    {
+        q: "Can I customize service types and columns?",
+        a: "Every workspace defines its own service types, statuses, lots, and roles. No hardcoded industry assumptions.",
+    },
+    {
+        q: "Do you have an API?",
+        a: "Business tier includes REST API access. DMS integration and webhooks are on the roadmap — ask if you have a specific need.",
+    },
+    {
+        q: "Who built this?",
+        a: "One person, at first. A working-floor detailer at a luxury dealer in Toronto who got tired of watching shops run on whiteboards. That's the whole story.",
+    },
+];
+
+export default function FAQ() {
+    return (
+        <section className="bg-zinc-950 py-24">
+            <div className="mx-auto max-w-4xl px-6">
+                <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-red-500">
+                    Questions
+                </p>
+                <h2 className="mb-16 text-4xl font-bold tracking-tight sm:text-5xl">
+                    What shop owners ask before signing up.
+                </h2>
+
+                <div className="divide-y divide-zinc-800 border-y border-zinc-800">
+                    {QUESTIONS.map((item) => (
+                        <details key={item.q} className="group py-6">
+                            <summary className="flex cursor-pointer items-center justify-between text-lg font-medium text-zinc-100">
+                                <span>{item.q}</span>
+                                <span className="text-red-500 transition-transform group-open:rotate-45">
+                                    +
+                                </span>
+                            </summary>
+                            <p className="mt-4 text-zinc-400">{item.a}</p>
+                        </details>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
