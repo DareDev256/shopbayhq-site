@@ -1,0 +1,19 @@
+# ShopBayHQ — Security Disclosure Policy (RFC 9116)
+# https://shopbayhq.com/.well-known/security.txt
+
+Contact: mailto:security@shopbayhq.com
+Expires: 2027-04-21T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://shopbayhq.com/.well-known/security.txt
+Policy: https://shopbayhq.com/security-policy
+
+# We welcome responsible disclosure. Please:
+#  - Give us a reasonable window (90 days) before public disclosure.
+#  - Don't access or modify other users' data.
+#  - Don't disrupt service for our customers.
+#  - We don't currently offer monetary bounties, but we'll publicly thank you (if desired).
+#
+# Out of scope:
+#  - Findings from automated scanners with no proof-of-concept exploit.
+#  - Self-XSS or social engineering.
+#  - Issues only exploitable by authorized users in their own workspace.
