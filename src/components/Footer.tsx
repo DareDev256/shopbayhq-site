@@ -9,9 +9,11 @@ export default function Footer() {
                     <p className="text-sm text-zinc-500">{BRAND.tagline}</p>
                 </div>
                 <nav className="flex flex-wrap gap-6 text-sm text-zinc-400">
-                    <a href="#pricing" className="hover:text-white">Pricing</a>
+                    <a href="/#pricing" className="hover:text-white">Pricing</a>
                     <a href={BRAND.appUrl} className="hover:text-white">Log in</a>
-                    <a href="mailto:dev@jamesdare.com" className="hover:text-white">Contact</a>
+                    <a href="/privacy" className="hover:text-white">Privacy</a>
+                    <a href="/terms" className="hover:text-white">Terms</a>
+                    <a href="mailto:hello@shopbayhq.com" className="hover:text-white">Contact</a>
                     <a href="https://github.com/DareDev256/ShopBayHQ" className="hover:text-white">Source</a>
                 </nav>
                 <p className="text-xs text-zinc-600">
