@@ -1,4 +1,6 @@
+import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Stats from "@/components/Stats";
 import Problem from "@/components/Problem";
 import Features from "@/components/Features";
 import Proof from "@/components/Proof";
@@ -8,16 +10,18 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 export default function Page() {
-    return (
-        <main>
-            <Hero />
-            <Problem />
-            <Features />
-            <Proof />
-            <Pricing />
-            <FAQ />
-            <CTA />
-            <Footer />
-        </main>
-    );
+  return (
+    <main>
+      <Nav />
+      <Hero />
+      <Stats />
+      <Problem />
+      <Features />
+      <Proof />
+      <Pricing />
+      <FAQ />
+      <CTA />
+      <Footer />
+    </main>
+  );
 }
