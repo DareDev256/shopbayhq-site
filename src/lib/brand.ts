@@ -1,8 +1,8 @@
 // One place to change brand identity. Swap these when the domain is bought.
 export const BRAND = {
     name: "ShopBayHQ",
-    tagline: "Every car. Every bay. One board.",
-    subtitle: "The shop-floor operating system built by a detailer who got tired of whiteboards.",
+    tagline: "Every car. Every bay. Full picture.",
+    subtitle: "Real-time visibility for your entire shop floor — who's working what, where every car is, and nothing falls through the cracks.",
     domain: "shopbayhq.com",
     appUrl: "https://app.shopbayhq.com",
     founder: "James Olusoga",

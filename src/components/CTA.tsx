@@ -10,9 +10,9 @@ export default function CTA() {
       <div className="relative mx-auto max-w-4xl px-6 py-24 text-center sm:py-32">
         <AnimateIn>
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
-            Stop losing cars
+            Total visibility.
             <br />
-            to whiteboards.
+            Zero confusion.
           </h2>
           <p className="mt-6 text-lg text-red-100/80">
             Free while you&apos;re figuring it out. Upgrade when you&apos;re ready.

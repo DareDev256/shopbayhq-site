@@ -66,7 +66,7 @@ export default function Features() {
             What you get
           </p>
           <h2 className="mb-16 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-            Built for the shop floor, not a CEO deck.
+            Everything your floor needs. Nothing it doesn&apos;t.
           </h2>
         </AnimateIn>
 

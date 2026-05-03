@@ -33,7 +33,7 @@ const QUESTIONS = [
   },
   {
     q: "Who built this?",
-    a: "One person, at first. A working-floor detailer at a luxury dealer in Toronto who got tired of watching shops run on whiteboards. That's the whole story.",
+    a: "A detailer who spent four years on the floor at a luxury dealership in Toronto. Knew exactly how a great shop should run — total visibility, zero confusion. Built the tool to make that real for every shop.",
   },
 ];
 

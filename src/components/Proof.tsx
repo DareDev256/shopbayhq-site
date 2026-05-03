@@ -17,10 +17,10 @@ export default function Proof() {
         <AnimateIn delay={0.1}>
           <blockquote className="text-2xl font-light leading-relaxed tracking-tight text-zinc-200 sm:text-3xl lg:text-4xl">
             <span className="text-red-500/60">&ldquo;</span>
-            Four years as a detailer at a luxury dealership. I watched my shop lose
-            cars to whiteboards, lose arguments to customers, lose advisor hours to
-            radio chatter. Built the thing they wouldn&rsquo;t. Releasing it to every
-            shop that&rsquo;s ever been burned by a Post-it.
+            Four years on the floor at a luxury dealership. I knew exactly how a
+            great shop should run — total visibility, zero confusion, every car
+            accounted for. So I built the board I always wanted. Now every shop
+            can have it.
             <span className="text-red-500/60">&rdquo;</span>
           </blockquote>
         </AnimateIn>

@@ -41,7 +41,7 @@ export default function Hero() {
           <br className="hidden sm:block" />
           Every bay.{" "}
           <br className="hidden sm:block" />
-          <span className="text-red-500">One board.</span>
+          <span className="text-red-500">Full picture.</span>
         </motion.h1>
 
         <motion.p
